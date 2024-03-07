@@ -13,6 +13,14 @@ type State struct {
 
 var configState *State
 
+func CheckStateFile(path string) error {
+	if _, err := os.Stat(path); err == nil {
+		return nil
+	} else {
+		return err
+	}
+}
+
 // SaveState Фиксация состояния во внешнем файле
 // json
 func SaveState(path string, tm time.Time) error {

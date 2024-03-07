@@ -26,6 +26,7 @@ type Config struct {
 	//Db_url       string `yaml:"db_url" json:"db_url"`
 	//Port         int    `yaml:"port" json:"port" `
 	//Noobject_url string `yaml:"noobject_url" json:"noobject_url"`
+	LogLevel      string `yaml:"logLevel" json:"logLevel"`
 	Env           bool   `yaml:"env" json:"env" `
 	Save          bool   `yaml:"save" json:"save" `
 	CryptPath     string `yaml:"crypt_path" json:"crypt_path"`
@@ -59,14 +60,8 @@ type Config struct {
 	Rules []struct {
 		From  string `yaml:"from" json:"from"`
 		Paths []struct {
-			InPath      string `yaml:"inpath" json:"inpath"`
-			OutPath     string `yaml:"outpath" json:"outpath"`
-			DirSubj     bool   `yaml:"dir_subj" json:"dir_subj" `
-			DirData     bool   `yaml:"dir_data" json:"dir_data" `
-			DirTemplate string `yaml:"dir_template" json:"dir_template"`
-			SubjInto    string `yaml:"subj_into" json:"subj_into"`
-			RegSubj     string `yaml:"reg_subj" json:"reg_subj"`
-			RegFile     string `yaml:"reg_file" json:"reg_file"`
+			InPath  string `yaml:"inPath" json:"inPath"`
+			OutPath string `yaml:"outPath" json:"outPath"`
 		} `yaml:"paths" json:"paths"`
 	} `yaml:"rules" json:"rules"`
 }

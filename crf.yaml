@@ -1,0 +1,9 @@
+logLevel: debug
+save: true
+rules:
+  - paths:
+    - inPath: /home/ananchenko@dohod.local/aworks/crf/in/Tom 2/Набор Абрис/RED_78
+      outPath: /home/ananchenko@dohod.local/aworks/crf/in/Tom 2/Набор Морис/RED_2
+    - inPath: /home/ananchenko@dohod.local/aworks/crf/in/Tom 3/Набор Абрис/RED_62
+      outPath: /home/ananchenko@dohod.local/aworks/crf/in/Tom 3/Набор Морис/RED_3
+    
